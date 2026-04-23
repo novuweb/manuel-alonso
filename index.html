@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Clínica de Fisioterapia Manuel Alonso | Almería</title>
+<meta name="description" content="Clínica de fisioterapia en Almería. Tratamiento de lesiones, fisioterapia deportiva, neurológica y más. Reserva tu cita: 628 542 501."/>
+<meta name="keywords" content="fisioterapia Almería, fisioterapeuta Almería, clínica fisioterapia, lesiones, rehabilitación Almería"/>
+<meta name="author" content="Clínica de Fisioterapia Manuel Alonso"/>
+<meta property="og:title" content="Clínica de Fisioterapia Manuel Alonso | Almería"/>
+<meta property="og:description" content="Recupera tu bienestar con tratamientos de fisioterapia personalizados en Almería."/>
+<meta property="og:type" content="website"/>
+<link rel="canonical" href="https://fisioterapiamanuel.es/"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MedicalBusiness",
+  "name":"Clínica de Fisioterapia Manuel Alonso",
+  "description":"Clínica de fisioterapia en Almería especializada en tratamiento de lesiones, fisioterapia deportiva, neurológica y más.",
+  "telephone":"+34628542501",
+  "address":{"@type":"PostalAddress","streetAddress":"C/ Mónaco","addressLocality":"Almería","postalCode":"04009","addressCountry":"ES"},
+  "openingHours":["Mo-Fr 09:00-14:00","Mo-Fr 16:00-20:00"],
+  "priceRange":"€€",
+  "medicalSpecialty":"PhysicalTherapy"
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --azul:#2D7DD2;
+  --azul-claro:#5BAEE0;
+  --azul-palido:#C8E6F7;
+  --azul-muy-claro:#EAF5FC;
+  --azul-oscuro:#1A5FA3;
+  --blanco:#FFFFFF;
+  --gris:#F7FBFE;
+  --texto:#1A1A2E;
+  --texto-suave:#4A5568;
+  --sombra:rgba(45,125,210,.13);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Lato',sans-serif;color:var(--texto);background:var(--blanco);overflow-x:hidden}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--azul-palido);transition:box-shadow .3s}
+nav.scrolled{box-shadow:0 2px 20px var(--sombra)}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 32px;height:70px;display:flex;align-items:center;justify-content:space-between}
+.nav-brand{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;color:var(--azul-oscuro);letter-spacing:.02em;text-decoration:none;line-height:1.2}
+.nav-brand span{display:block;font-size:.8rem;font-weight:300;color:var(--azul-claro);letter-spacing:.06em;font-family:'Lato',sans-serif}
+.nav-links{display:flex;gap:32px;list-style:none}
+.nav-links a{text-decoration:none;color:var(--texto);font-size:.88rem;letter-spacing:.04em;font-weight:400;transition:color .2s;text-transform:uppercase}
+.nav-links a:hover{color:var(--azul)}
+.nav-cta{background:var(--azul);color:var(--blanco)!important;padding:10px 22px;border-radius:4px;transition:background .2s!important}
+.nav-cta:hover{background:var(--azul-oscuro)!important}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.hamburger span{width:24px;height:2px;background:var(--azul-oscuro);transition:.3s}
+@media(max-width:768px){
+  .nav-links{display:none;position:fixed;top:70px;left:0;right:0;background:white;flex-direction:column;padding:24px 32px;gap:20px;border-bottom:1px solid var(--azul-palido);box-shadow:0 8px 24px var(--sombra)}
+  .nav-links.open{display:flex}
+  .hamburger{display:flex}
+}
+
+/* HERO */
+.hero{position:relative;height:100vh;min-height:580px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.hero-media{position:absolute;inset:0;z-index:0;background:url('sobrenosotros.jpg') center/cover no-repeat}
+.hero-media video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(135deg,rgba(26,95,163,.72) 0%,rgba(45,125,210,.45) 100%)}
+.hero-content{position:relative;z-index:2;text-align:center;padding:0 24px;max-width:780px}
+.hero-badge{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);color:white;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;padding:6px 18px;border-radius:20px;margin-bottom:24px}
+.hero-content h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.6rem,6vw,4.4rem);font-weight:400;color:white;line-height:1.15;margin-bottom:18px}
+.hero-content p{font-size:1.1rem;color:rgba(255,255,255,.9);font-weight:300;line-height:1.7;margin-bottom:36px;max-width:560px;margin-left:auto;margin-right:auto}
+.hero-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.btn-primary{background:var(--blanco);color:var(--azul-oscuro);padding:14px 32px;border-radius:4px;text-decoration:none;font-weight:700;font-size:.9rem;letter-spacing:.04em;transition:.2s;border:2px solid transparent}
+.btn-primary:hover{background:transparent;color:white;border-color:white}
+.btn-secondary{background:transparent;color:white;padding:14px 32px;border-radius:4px;text-decoration:none;font-weight:400;font-size:.9rem;letter-spacing:.04em;border:2px solid rgba(255,255,255,.6);transition:.2s}
+.btn-secondary:hover{background:rgba(255,255,255,.12);border-color:white}
+.hero-scroll{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:8px;color:rgba(255,255,255,.7);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase}
+.hero-scroll::after{content:'';width:1px;height:36px;background:rgba(255,255,255,.4);animation:scrollpulse 2s infinite}
+@keyframes scrollpulse{0%,100%{opacity:.4;transform:scaleY(.7)}50%{opacity:1;transform:scaleY(1)}}
+
+/* SECTIONS */
+section{padding:96px 32px}
+.container{max-width:1200px;margin:0 auto}
+.section-label{font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--azul-claro);font-weight:700;margin-bottom:12px}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:400;color:var(--texto);line-height:1.2;margin-bottom:20px}
+.section-title em{font-style:italic;color:var(--azul)}
+.section-sub{color:var(--texto-suave);font-size:1rem;line-height:1.7;max-width:560px}
+.section-header{margin-bottom:64px}
+.section-header.center{text-align:center}
+.section-header.center .section-sub{margin:0 auto}
+.divider{width:48px;height:3px;background:var(--azul-claro);border-radius:2px;margin-top:20px}
+.center .divider{margin-left:auto;margin-right:auto}
+
+/* NÚMEROS */
+.stats{background:var(--azul);padding:56px 32px}
+.stats-grid{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:32px;text-align:center}
+.stat-num{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:300;color:white;line-height:1}
+.stat-label{font-size:.82rem;color:rgba(255,255,255,.8);letter-spacing:.06em;text-transform:uppercase;margin-top:6px}
+@media(max-width:600px){.stats-grid{grid-template-columns:repeat(2,1fr)}}
+
+/* SOBRE */
+.sobre{background:var(--azul-muy-claro)}
+.sobre-layout{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.sobre-img{position:relative;border-radius:4px;overflow:hidden;aspect-ratio:4/5}
+.sobre-img img{width:100%;height:100%;object-fit:cover;display:block}
+.sobre-img::before{content:'';position:absolute;top:-12px;left:-12px;right:12px;bottom:12px;border:2px solid var(--azul-claro);border-radius:4px;z-index:-1}
+.sobre-text .section-title{margin-bottom:24px}
+.sobre-text p{color:var(--texto-suave);line-height:1.8;margin-bottom:16px;font-size:.97rem}
+.sobre-highlights{display:flex;flex-direction:column;gap:14px;margin-top:32px}
+.sobre-h{display:flex;align-items:center;gap:14px;font-size:.92rem;color:var(--texto)}
+.sobre-h svg{flex-shrink:0;color:var(--azul)}
+@media(max-width:768px){.sobre-layout{grid-template-columns:1fr;gap:40px}}
+
+/* SERVICIOS */
+.servicios{background:var(--blanco)}
+.servicios-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:28px}
+.serv-card{background:var(--gris);border:1px solid var(--azul-palido);border-radius:6px;padding:32px 28px;transition:.25s;position:relative;overflow:hidden}
+.serv-card::before{content:'';position:absolute;top:0;left:0;width:4px;height:0;background:var(--azul);transition:height .3s}
+.serv-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px var(--sombra)}
+.serv-card:hover::before{height:100%}
+.serv-icon{width:52px;height:52px;background:var(--azul-muy-claro);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:20px;color:var(--azul)}
+.serv-card h3{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:500;margin-bottom:10px;color:var(--texto)}
+.serv-card p{font-size:.88rem;color:var(--texto-suave);line-height:1.7}
+
+/* PATOLOGÍAS */
+.patologias{background:var(--azul-muy-claro)}
+.pat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+.pat-item{background:white;border:1px solid var(--azul-palido);border-radius:4px;padding:18px 22px;display:flex;align-items:center;gap:12px;transition:.2s}
+.pat-item:hover{border-color:var(--azul-claro);box-shadow:0 4px 16px var(--sombra)}
+.pat-dot{width:8px;height:8px;border-radius:50%;background:var(--azul-claro);flex-shrink:0}
+.pat-item span{font-size:.9rem;color:var(--texto);font-weight:400}
+
+/* PROCESO */
+.proceso{background:var(--azul);overflow:hidden}
+.proceso .section-title{color:white}
+.proceso .section-label{color:rgba(255,255,255,.7)}
+.proceso .divider{background:rgba(255,255,255,.4)}
+.pasos{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;position:relative}
+.pasos::before{content:'';position:absolute;top:36px;left:10%;right:10%;height:1px;background:rgba(255,255,255,.2)}
+.paso{text-align:center;position:relative}
+.paso-num{width:72px;height:72px;border-radius:50%;background:rgba(255,255,255,.12);border:2px solid rgba(255,255,255,.35);display:flex;align-items:center;justify-content:center;margin:0 auto 24px;font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:white;position:relative;z-index:1}
+.paso h3{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:400;color:white;margin-bottom:10px}
+.paso p{font-size:.85rem;color:rgba(255,255,255,.75);line-height:1.65}
+@media(max-width:768px){.pasos{grid-template-columns:repeat(2,1fr)}.pasos::before{display:none}}
+@media(max-width:480px){.pasos{grid-template-columns:1fr}}
+
+/* OPINIONES */
+.opiniones{background:var(--blanco)}
+.reviews-track-wrap{overflow:hidden;position:relative}
+.reviews-track-wrap::before,.reviews-track-wrap::after{content:'';position:absolute;top:0;bottom:0;width:80px;z-index:2;pointer-events:none}
+.reviews-track-wrap::before{left:0;background:linear-gradient(to right,white,transparent)}
+.reviews-track-wrap::after{right:0;background:linear-gradient(to left,white,transparent)}
+.reviews-track{display:flex;gap:24px;width:max-content;animation:scroll-left 45s linear infinite}
+.reviews-track:hover{animation-play-state:paused}
+@keyframes scroll-left{to{transform:translateX(-50%)}}
+.review-card{flex-shrink:0;width:320px;background:var(--gris);border:1px solid var(--azul-palido);border-radius:6px;padding:28px;position:relative}
+.review-stars{color:var(--azul-claro);font-size:1rem;margin-bottom:12px;letter-spacing:2px}
+.review-text{font-size:.9rem;color:var(--texto-suave);line-height:1.7;margin-bottom:16px;font-style:italic}
+.review-name{font-weight:700;font-size:.85rem;color:var(--azul-oscuro);text-transform:uppercase;letter-spacing:.04em}
+.review-ago{font-size:.78rem;color:var(--texto-suave);margin-top:2px}
+
+/* HORARIOS */
+.horarios{background:var(--azul-muy-claro)}
+.horarios-layout{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.horario-table{width:100%;border-collapse:collapse}
+.horario-table tr{border-bottom:1px solid var(--azul-palido)}
+.horario-table td{padding:14px 0;font-size:.93rem;color:var(--texto)}
+.horario-table td:last-child{text-align:right;color:var(--azul-oscuro);font-weight:700}
+.mapa-wrap{border-radius:6px;overflow:hidden;border:2px solid var(--azul-palido);height:380px}
+.mapa-wrap iframe{width:100%;height:100%;border:none;display:block}
+.contacto-info{margin-top:32px;display:flex;flex-direction:column;gap:16px}
+.ci{display:flex;align-items:center;gap:14px;font-size:.93rem;color:var(--texto)}
+.ci svg{color:var(--azul);flex-shrink:0}
+@media(max-width:768px){.horarios-layout{grid-template-columns:1fr}}
+
+/* FOOTER */
+footer{background:var(--azul-oscuro);color:rgba(255,255,255,.75);padding:56px 32px 32px}
+.footer-inner{max-width:1200px;margin:0 auto}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;margin-bottom:48px}
+.footer-brand{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:500;color:white;margin-bottom:12px}
+.footer-brand span{display:block;font-size:.8rem;font-weight:300;color:rgba(255,255,255,.55);font-family:'Lato',sans-serif;letter-spacing:.06em}
+.footer-desc{font-size:.88rem;line-height:1.7;color:rgba(255,255,255,.6);margin-top:12px}
+.footer-col h4{color:white;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:18px;font-weight:700}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.footer-col a{color:rgba(255,255,255,.6);text-decoration:none;font-size:.88rem;transition:color .2s}
+.footer-col a:hover{color:white}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:24px;display:flex;justify-content:space-between;align-items:center;font-size:.8rem;flex-wrap:wrap;gap:12px}
+@media(max-width:768px){.footer-top{grid-template-columns:1fr}}
+
+/* WHATSAPP */
+.wa-float{position:fixed;bottom:28px;right:28px;z-index:999;background:#25D366;border-radius:50%;width:58px;height:58px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.45);transition:.2s;text-decoration:none}
+.wa-float:hover{transform:scale(1.08);box-shadow:0 6px 28px rgba(37,211,102,.55)}
+.wa-float svg{color:white}
+
+/* FADE IN */
+.fi{opacity:0;transform:translateY(28px);transition:opacity .65s,transform .65s}
+.fi.vis{opacity:1;transform:none}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  section{padding:64px 20px}
+  .servicios-grid{grid-template-columns:1fr}
+  .pat-grid{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="nav-brand">Fisioterapia Manuel Alonso<span>Almería · C/ Mónaco</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#sobre">Sobre mí</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#patologias">Patologías</a></li>
+      <li><a href="#opiniones">Opiniones</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="tel:628542501" class="nav-cta">Pedir cita</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-media">
+    <video autoplay muted loop playsinline preload="auto" poster="sobrenosotros.jpg" aria-hidden="true">
+      <source src="hero-video.mp4" type="video/mp4"/>
+    </video>
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge">Clínica de Fisioterapia · Almería</div>
+    <h1>Tu recuperación, nuestra <em style="font-style:italic">prioridad</em></h1>
+    <p>Tratamientos de fisioterapia personalizados para que recuperes el movimiento, elimines el dolor y vuelvas a hacer lo que amas.</p>
+    <div class="hero-btns">
+      <a href="tel:628542501" class="btn-primary">Pedir cita ahora</a>
+      <a href="#servicios" class="btn-secondary">Ver tratamientos</a>
+    </div>
+  </div>
+  <div class="hero-scroll">Scroll</div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stats-grid">
+    <div class="fi"><div class="stat-num">+10</div><div class="stat-label">Años de experiencia</div></div>
+    <div class="fi"><div class="stat-num">+2.000</div><div class="stat-label">Pacientes tratados</div></div>
+    <div class="fi"><div class="stat-num">8</div><div class="stat-label">Especialidades</div></div>
+    <div class="fi"><div class="stat-num">100%</div><div class="stat-label">Dedicación personal</div></div>
+  </div>
+</div>
+
+<!-- SOBRE -->
+<section class="sobre" id="sobre">
+  <div class="container">
+    <div class="sobre-layout">
+      <div class="sobre-img fi">
+        <img src="sobrenosotros.jpg" alt="Clínica de Fisioterapia Manuel Alonso en Almería" loading="lazy"/>
+      </div>
+      <div class="sobre-text fi">
+        <div class="section-label">Sobre la clínica</div>
+        <h2 class="section-title">Fisioterapia con <em>experiencia y compromiso</em></h2>
+        <p>Soy Manuel Alonso, fisioterapeuta colegiado con más de 10 años de experiencia ayudando a pacientes de Almería a recuperarse de lesiones, dolores crónicos y problemas de movilidad.</p>
+        <p>Mi filosofía es sencilla: cada paciente es único. Por eso realizo una valoración exhaustiva y diseño un plan de tratamiento adaptado a tus necesidades específicas, con el objetivo de que alcances la recuperación completa en el menor tiempo posible.</p>
+        <p>La clínica está ubicada en el corazón de Almería, en C/ Mónaco, con un entorno tranquilo y todos los medios técnicos necesarios para tu rehabilitación.</p>
+        <div class="sobre-highlights">
+          <div class="sobre-h">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+            Fisioterapeuta colegiado
+          </div>
+          <div class="sobre-h">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+            Tratamiento 100% personalizado
+          </div>
+          <div class="sobre-h">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+            Equipamiento profesional de última generación
+          </div>
+          <div class="sobre-h">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+            Resultados reales y duraderos
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section class="servicios" id="servicios">
+  <div class="container">
+    <div class="section-header center fi">
+      <div class="section-label">Nuestros tratamientos</div>
+      <h2 class="section-title">¿En qué podemos <em>ayudarte?</em></h2>
+      <p class="section-sub">Ofrecemos una amplia gama de tratamientos de fisioterapia para abordar tu problema desde su raíz.</p>
+      <div class="divider"></div>
+    </div>
+    <div class="servicios-grid">
+      <div class="serv-card fi">
+        <div class="serv-icon">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3>Fisioterapia Manual</h3>
+        <p>Técnicas manuales especializadas para aliviar el dolor, recuperar la movilidad y tratar disfunciones músculo-esqueléticas.</p>
+      </div>
+      <div class="serv-card fi">
+        <div class="serv-icon">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <h3>Fisioterapia Deportiva</h3>
+        <p>Recuperación y prevención de lesiones deportivas. Vuelve a tu deporte antes y con más seguridad.</p>
+      </div>
+      <div class="serv-card fi">
+        <div class="serv-icon">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M9.5 2A2.5 2.5 0 0112 4.5v15a2.5 2.5 0 01-5 0v-15A2.5 2.5 0 019.5 2z"/><path d="M14.5 8A2.5 2.5 0 0117 10.5v9a2.5 2.5 0 01-5 0v-9A2.5 2.5 0 0114.5 8z"/></svg>
+        </div>
+        <h3>Electroterapia</h3>
+        <p>TENS, ultrasonidos y corrientes interferenciales para acelerar la recuperación y reducir la inflamación.</p>
+      </div>
+      <div class="serv-card fi">
+        <div class="serv-icon">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Fisioterapia Neurológica</h3>
+        <p>Rehabilitación para pacientes con patologías del sistema nervioso: ictus, esclerosis múltiple, Parkinson y más.</p>
+      </div>
+      <div class="serv-card fi">
+        <div class="serv-icon">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        </div>
+        <h3>Tratamiento del Dolor</h3>
+        <p>Abordaje integral del dolor crónico y agudo mediante técnicas avanzadas de fisioterapia y terapia manual.</p>
+      </div>
+      <div class="serv-card fi">
+        <div class="serv-icon">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+        </div>
+        <h3>Fisioterapia Postural</h3>
+        <p>Corrección de alteraciones posturales que generan dolor de espalda, cervicales y otras molestias crónicas.</p>
+      </div>
+      <div class="serv-card fi">
+        <div class="serv-icon">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+        </div>
+        <h3>Rehabilitación Post-Cirugía</h3>
+        <p>Recuperación óptima tras intervenciones quirúrgicas para recuperar la funcionalidad completa del área afectada.</p>
+      </div>
+      <div class="serv-card fi">
+        <div class="serv-icon">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M15 3h4a2 2 0 012 2v14a2 2 0 01-2 2h-4M10 17l5-5-5-5M13.8 12H3"/></svg>
+        </div>
+        <h3>Punción Seca</h3>
+        <p>Técnica de puntura para el tratamiento de puntos gatillo miofasciales que generan dolor referido y tensión muscular.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PATOLOGÍAS -->
+<section class="patologias" id="patologias">
+  <div class="container">
+    <div class="section-header center fi">
+      <div class="section-label">¿Qué tratamos?</div>
+      <h2 class="section-title">Patologías <em>frecuentes</em></h2>
+      <p class="section-sub">Si tienes alguna de estas dolencias, podemos ayudarte a resolverlas con fisioterapia especializada.</p>
+      <div class="divider"></div>
+    </div>
+    <div class="pat-grid fi">
+      <div class="pat-item"><div class="pat-dot"></div><span>Lumbalgia y ciática</span></div>
+      <div class="pat-item"><div class="pat-dot"></div><span>Cervicalgia y tortícolis</span></div>
+      <div class="pat-item"><div class="pat-dot"></div><span>Contracturas musculares</span></div>
+      <div class="pat-item"><div class="pat-dot"></div><span>Tendinitis y bursitis</span></div>
+      <div class="pat-item"><div class="pat-dot"></div><span>Esguince de tobillo</span></div>
+      <div class="pat-item"><div class="pat-dot"></div><span>Lesiones de rodilla</span></div>
+      <div class="pat-item"><div class="pat-dot"></div><span>Hombro doloroso</span></div>
+      <div class="pat-item"><div class="pat-dot"></div><span>Epicondilitis (codo de tenista)</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESO -->
+<section class="proceso" id="proceso">
+  <div class="container">
+    <div class="section-header center fi" style="margin-bottom:64px">
+      <div class="section-label" style="color:rgba(255,255,255,.7)">Cómo trabajamos</div>
+      <h2 class="section-title" style="color:white">Tu proceso de <em style="color:var(--azul-palido)">recuperación</em></h2>
+      <div class="divider" style="background:rgba(255,255,255,.4);margin:20px auto 0"></div>
+    </div>
+    <div class="pasos">
+      <div class="paso fi">
+        <div class="paso-num">01</div>
+        <h3>Primera consulta</h3>
+        <p>Evaluamos tu historial, escuchamos tu problema y realizamos una exploración física detallada.</p>
+      </div>
+      <div class="paso fi">
+        <div class="paso-num">02</div>
+        <h3>Diagnóstico</h3>
+        <p>Identificamos la causa raíz de tu dolencia y establecemos un diagnóstico fisioterápico preciso.</p>
+      </div>
+      <div class="paso fi">
+        <div class="paso-num">03</div>
+        <h3>Plan personalizado</h3>
+        <p>Diseñamos un tratamiento a medida con los objetivos, técnicas y tiempos adecuados para ti.</p>
+      </div>
+      <div class="paso fi">
+        <div class="paso-num">04</div>
+        <h3>Seguimiento</h3>
+        <p>Evaluamos tu progreso en cada sesión y ajustamos el tratamiento para optimizar tu recuperación.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OPINIONES -->
+<section class="opiniones" id="opiniones">
+  <div class="container">
+    <div class="section-header center fi">
+      <div class="section-label">Testimonios</div>
+      <h2 class="section-title">Lo que dicen <em>nuestros pacientes</em></h2>
+      <div class="divider"></div>
+    </div>
+  </div>
+  <div class="reviews-track-wrap">
+    <div class="reviews-track" id="reviewsTrack">
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Llevaba meses con dolor de espalda y tras unas pocas sesiones con Manuel noté una mejora increíble. Muy profesional y atento en todo momento."</p><div class="review-name">Ana García Martínez</div><div class="review-ago">Hace 2 semanas</div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Me operé de la rodilla y la recuperación fue mucho más rápida de lo esperado gracias al trabajo de Manuel. Lo recomiendo sin dudarlo."</p><div class="review-name">Carlos López Ruiz</div><div class="review-ago">Hace 1 mes</div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Vine con una contractura cervical brutal y salí en dos sesiones como nuevo. El trato es excelente y la clínica está muy bien equipada."</p><div class="review-name">María Fernández Soto</div><div class="review-ago">Hace 3 semanas</div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Hago deporte y me lesioné el tobillo. Manuel me trató genial, con mucha dedicación. En dos semanas volví a entrenar. 100% recomendable."</p><div class="review-name">Javier Moreno Pérez</div><div class="review-ago">Hace 2 meses</div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Muy buen profesional, explica perfectamente cada técnica que aplica y por qué. He notado una mejora enorme en mi postura. Gracias, Manuel."</p><div class="review-name">Laura Sánchez Jiménez</div><div class="review-ago">Hace 1 mes</div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Sufro de lumbalgia crónica y con Manuel he encontrado alivio de verdad. Es serio, puntual y muy efectivo. La mejor clínica de fisio de Almería."</p><div class="review-name">Pedro Alonso Castillo</div><div class="review-ago">Hace 5 semanas</div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Me trató la tendinitis en el hombro que arrastraba desde hace años. Ahora puedo hacer vida normal sin dolor. Gracias por tu trabajo."</p><div class="review-name">Elena Martín González</div><div class="review-ago">Hace 3 meses</div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Mi madre vino con problemas neurológicos y Manuel demostró una paciencia y profesionalidad admirables. Mejoría muy notable desde el primer mes."</p><div class="review-name">Rosa Díaz Herrera</div><div class="review-ago">Hace 2 meses</div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"La punción seca me quitó en dos sesiones un dolor de meses que ningún médico conseguía resolver. Técnica y tratamiento impecables."</p><div class="review-name">Antonio Gómez Vidal</div><div class="review-ago">Hace 6 semanas</div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Clínica muy limpia y bien equipada. Manuel trata a sus pacientes con muchísimo respeto y cercanía. Me alegro mucho de haberle encontrado."</p><div class="review-name">Cristina Torres Navarro</div><div class="review-ago">Hace 1 mes</div></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Estaba con el ciático que no podía ni dormir. Tras 5 sesiones con Manuel el dolor desapareció completamente. Profesional de 10 estrellas."</p><div class="review-name">Miguel Ruiz Domínguez</div><div class="review-ago">Hace 7 semanas</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- HORARIOS Y CONTACTO -->
+<section class="horarios" id="contacto">
+  <div class="container">
+    <div class="section-header fi">
+      <div class="section-label">Contacto y horarios</div>
+      <h2 class="section-title">Visítanos en <em>Almería</em></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="horarios-layout">
+      <div class="fi">
+        <table class="horario-table">
+          <tr><td>Lunes – Viernes</td><td>09:00 – 14:00</td></tr>
+          <tr><td>Lunes – Viernes</td><td>16:00 – 20:00</td></tr>
+          <tr><td>Sábado</td><td>09:00 – 13:00</td></tr>
+          <tr><td>Domingo</td><td>Cerrado</td></tr>
+        </table>
+        <div class="contacto-info">
+          <div class="ci">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            C/ Mónaco, 04009 Almería
+          </div>
+          <div class="ci">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.64A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92v2z"/></svg>
+            <a href="tel:628542501" style="color:inherit;text-decoration:none">628 542 501</a>
+          </div>
+        </div>
+        <div style="margin-top:32px;display:flex;gap:14px;flex-wrap:wrap">
+          <a href="tel:628542501" style="background:var(--azul);color:white;padding:13px 28px;border-radius:4px;text-decoration:none;font-size:.88rem;font-weight:700;letter-spacing:.04em">Llamar ahora</a>
+          <a href="https://wa.me/34628542501?text=Hola,%20me%20gustaría%20pedir%20cita" target="_blank" rel="noopener" style="background:#25D366;color:white;padding:13px 28px;border-radius:4px;text-decoration:none;font-size:.88rem;font-weight:700;letter-spacing:.04em">WhatsApp</a>
+        </div>
+      </div>
+      <div class="fi">
+        <div class="mapa-wrap">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3194.1!2d-2.4457208!3d36.8532378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7a9fe6dffc92a9%3A0x9cd33a1cb8defac!2sCl%C3%ADnica%20de%20fisioterapia%20Manuel%20Alonso!5e0!3m2!1ses!2ses!4v1714000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localización Clínica de Fisioterapia Manuel Alonso"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">Fisioterapia Manuel Alonso<span>Clínica de Fisioterapia · Almería</span></div>
+        <p class="footer-desc">Tu clínica de fisioterapia de confianza en Almería. Tratamientos personalizados para que recuperes tu bienestar y calidad de vida.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#servicios">Fisioterapia Manual</a></li>
+          <li><a href="#servicios">Fisioterapia Deportiva</a></li>
+          <li><a href="#servicios">Electroterapia</a></li>
+          <li><a href="#servicios">Fisioterapia Neurológica</a></li>
+          <li><a href="#servicios">Punción Seca</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="tel:628542501">628 542 501</a></li>
+          <li><a href="#contacto">C/ Mónaco, Almería</a></li>
+          <li><a href="#contacto">Horarios</a></li>
+          <li><a href="https://wa.me/34628542501" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Clínica de Fisioterapia Manuel Alonso · Almería</span>
+      <span>Diseño web por <a href="https://novu.es" style="color:rgba(255,255,255,.5);text-decoration:none">NOVU</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a class="wa-float" href="https://wa.me/34628542501?text=Hola,%20me%20gustaría%20pedir%20cita" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+// NAV scroll
+window.addEventListener('scroll',()=>{
+  document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>50)
+})
+
+// Reviews infinite carousel
+const track=document.getElementById('reviewsTrack')
+track.innerHTML+=track.innerHTML
+
+// Intersection Observer
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis')})
+},{threshold:.12})
+document.querySelectorAll('.fi').forEach(el=>observer.observe(el))
+</script>
+</body>
+</html>
